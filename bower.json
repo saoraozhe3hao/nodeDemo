@@ -1,0 +1,11 @@
+{
+  "name": "nodeDemo",
+  "version": "0.0.0",
+  "authors": [
+    "hongzhenquan"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

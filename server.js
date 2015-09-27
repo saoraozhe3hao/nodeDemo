@@ -1,7 +1,5 @@
 //引用核心模块
 var http = require('http');
-//引用node_module里面的第三方模块，用名称定位
-var express = require('express');
 //引用本地模块，即引用了模块文件里的exports
 var subServer = require('./subServer');
 

@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/saoraozhe3hao/nodeDemo#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "bootstrap": "^3.3.5",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongoose": "^4.1.8"
   }
 }

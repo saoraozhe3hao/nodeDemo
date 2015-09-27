@@ -1,0 +1,38 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    //- 元素属性放在()中
+    link(href="/bootstrap/dist/css/bootstrap.min.css", ref="stylesheet")
+    script(src="/jquery/dist/jquery.min.js")
+    script(src="/bootstrap/dist/js/bootstrap.min.js")
+  body
+    //引入一段模板
+    include ./header
+    //-给元素指定类和ID
+    h1.red#title 标签内容
+    //- 声明jade变量
+    - var main = '主体'
+    //-元素的默认标签是DIV,使用变量
+    .main #{main}
+    //标签后面加个点，可以支持元素内容多行
+    script.
+      var i =0;
+    //循环
+    - var names = ['Tom','Jim']
+    - for (var i in names)
+      p #{names[i]}
+    if names.length > 1
+      p #{names[1]}
+    else
+      p #{names[0]}
+    //-定义块
+    block desc
+      p desc
+    //重用块
+    block desc
+    //定义mixin
+    mixin chongyong(param)
+      p #{param}
+    //使用mixin
+    +chongyong(1)
