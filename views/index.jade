@@ -3,16 +3,15 @@ html
   head
     meta(charset="utf-8")
     //- 元素属性放在()中
-    link(href="/bootstrap/dist/css/bootstrap.min.css", ref="stylesheet")
-    script(src="/jquery/dist/jquery.min.js")
-    script(src="/bootstrap/dist/js/bootstrap.min.js")
+    script(src="http://cdn.socket.io/socket.io-1.3.5.js")
+    script(src="/js/client.js")
   body
     //引入一段模板
     include ./header
     //-给元素指定类和ID
     h1.red#title 标签内容
     //- 声明jade变量
-    - var main = '主体'
+    - var mai = '主体'
     //-元素的默认标签是DIV,使用变量
     .main #{main}
     //标签后面加个点，可以支持元素内容多行
